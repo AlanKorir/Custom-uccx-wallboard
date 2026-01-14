@@ -1,0 +1,80 @@
+/* Global styles for UCCX Wallboard */
+
+* {
+  box-sizing: border-box;
+  /* Include padding and border in element's total width/height */
+  margin: 0;
+  /* Remove default margins */
+  padding: 0;
+  /* Remove default padding */
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  /* Modern font stack */
+  -webkit-font-smoothing: antialiased;
+  /* Smooth fonts on WebKit browsers */
+  -moz-osx-font-smoothing: grayscale;
+  /* Smooth fonts on Firefox */
+  overflow-x: hidden;
+  /* Prevent horizontal scrolling */
+}
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+  /* Scrollbar width */
+  height: 8px;
+  /* Scrollbar height for horizontal */
+}
+
+::-webkit-scrollbar-track {
+  background: #001e3c;
+  /* Track color */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1976d2;
+  /* Thumb color */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1565c0;
+  /* Thumb hover color */
+}
+
+/* Animation classes */
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+  /* Pulsing animation for real-time updates */
+}
+
+/* Utility classes */
+.full-height {
+  height: 100vh;
+  /* Full viewport height */
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
